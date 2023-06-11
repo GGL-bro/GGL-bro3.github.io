@@ -36,7 +36,11 @@
     <link rel="stylesheet" href="./css/style_time.css">
     <script src="./js/jquery.min_lb.js"></script>
     <script type="text/javascript" src="js/jquery.min_00.js"></script>
-
+    <script type="text/javascript">$(document).ready(function () {
+            $("#gallery_output img").not(":first").hide(); $("#gallery a").click(function () {
+                $("#gallery a").removeClass('on'); $(this).addClass("on"); if ($("#" + this.rel).is(":hidden")) { $("#gallery_output img").slideUp(); $("#" + this.rel).slideDown(); }
+            });
+        });</script>
     <style type="text/css">
         .div{
             margin: 0;
@@ -413,11 +417,7 @@
             </ul>
         </div>
         <script type="text/javascript" src="js/jquery_ms.js"></script>
-        <script>$(".box ul li").hover(function (e) {
-                var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").css({ left: 0, top: "-220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sB) { $(this).find(".txt").css({ left: 0, top: "220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sR) { $(this).find(".txt").css({ left: "164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").css({ left: "-164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); }
-            }, function (e) {
-                var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").stop().animate({ left: 0, top: "-220px" }, 500); } else if (min == sB) { $(this).find(".txt").stop().animate({ left: 0, top: "220px" }, 500); } else if (min == sR) { $(this).find(".txt").stop().animate({ left: "164px", top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").stop().animate({ left: "-164px", top: 0 }, 500); }
-            });</script>
+        
         <div class="text-desc plain-text" style="text-align: justify" >
             <p>各省独具特色的非遗项目成为地方短视频文化名片，助力地方城市形象提升，打造独特文化标识。比如，天津相声、安徽黄梅戏、广西柳州螺蛳粉等等。</p>
         </div> 
