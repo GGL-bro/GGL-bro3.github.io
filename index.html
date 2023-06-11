@@ -339,7 +339,89 @@
         <div class="text-desc plain-text" style="text-align: justify;" >
             <p>濒危非遗视频播放量同比增长<span class="span-bold">60%</span>，螺蛳粉、烤全羊等非遗美食最受欢迎。短视频平台赋能濒危非遗，帮助湖北的岳家拳、辽宁的东北大鼓、山西的九曲黄河阵等濒危的非遗作品获得更高的关注度。</p>
         </div> 
-
+        <!-- 美食图片 -->
+        <div class="box">
+            <ul>
+                <li>
+                    <img src="image/1螺蛳粉.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP1螺蛳粉</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/2烤全羊.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP2烤全羊</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/3川菜.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP3川菜</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/4刀削面.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP4刀削面</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/5沙县小吃.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP5沙县小吃</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/6德州扒鸡.jpg" />
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP6德州扒鸡</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/7龟苓膏.jpg">
+                    <div class="txt"style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP7龟苓膏</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="image/8桂林米粉.jpg" />
+                    <div class="txt" style="background-color: rgb(70, 80, 76,0.4);width: 100%;">
+                        <h2>TOP8桂林米粉</h2>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="js/jquery_ms.js"></script>
+        <script>$(".box ul li").hover(function (e) {
+                var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").css({ left: 0, top: "-220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sB) { $(this).find(".txt").css({ left: 0, top: "220px" }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sR) { $(this).find(".txt").css({ left: "164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").css({ left: "-164px", top: 0 }).stop().animate({ left: 0, top: 0 }, 500); }
+            }, function (e) {
+                var left = $(this).offset().left, top = $(this).offset().top, right = $(this).offset().left + $(this).width(), bottom = top + $(this).height(); var x = e.pageX, y = e.pageY; var sT = Math.abs(top - y), sL = Math.abs(left - x), sB = Math.abs(bottom - y), sR = Math.abs(right - x); var min = Math.min(sT, sL, sB, sR); if (min == sT) { $(this).find(".txt").stop().animate({ left: 0, top: "-220px" }, 500); } else if (min == sB) { $(this).find(".txt").stop().animate({ left: 0, top: "220px" }, 500); } else if (min == sR) { $(this).find(".txt").stop().animate({ left: "164px", top: 0 }, 500); } else if (min == sL) { $(this).find(".txt").stop().animate({ left: "-164px", top: 0 }, 500); }
+            });</script>
         <div class="text-desc plain-text" style="text-align: justify" >
             <p>各省独具特色的非遗项目成为地方短视频文化名片，助力地方城市形象提升，打造独特文化标识。比如，天津相声、安徽黄梅戏、广西柳州螺蛳粉等等。</p>
         </div> 
@@ -787,12 +869,6 @@
         <div class=" plain-text" style="text-align: center;margin-bottom: 2rem;" >
             <p>在人人都是广播站的时代，我们每一个人都是非遗传承人</p>
         </div> 
-
-
-
-
-
-
         <script type="text/javascript" src="./js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="./js/jquery.mousewheel.js"></script>
@@ -808,117 +884,8 @@
         </div>
     
 
-        <!-- <div class="content" style="margin-top: 0">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-            <div id='stars4'></div>
-
-            <div class="mobile-page" id="mobile-page">
-                <div class="user-group">
-                    <div class="user-msg" id="msg-1">
-                        <span class="user-reply" style="line-height: 25px">
-                            <span style="font-weight: bold">求安眠药！</span>疫情医院被封，无法开药。急需，走平台，骗子走开
-                        </span>
-                        <i class="triangle-user"></i>
-                    </div>
-                    <img class="user-img" src="./image/头像1.png" />
-                </div>
-                <div class="admin-group">
-                    <img class="admin-img" src="./image/头像2.png" />
-                    <div class="admin-msg" id="msg-2">
-                        <i class="triangle-admin"></i>
-                        <span class="admin-reply" style="line-height: 25px"><span style="font-weight: bold;">有uu需要思诺思吗</span> 医院上次给我开的让我试试 实在受不了这个药吃完太难受了影响生活 还有好多盒 <span style="font-weight: bold;">需要的私信我</span> 绝对保真😭😭</span>
-                    </div>
-                </div>
-                <div class="user-group">
-                    <div class="user-msg" id="msg-3">
-                        <span class="user-reply" style="line-height: 25px"><span style="font-weight: bold;">楼里有骗子！请勿上当受骗</span></span>
-                        <span class="user-reply" style="line-height: 25px">本人严重失眠患者我在小组评论里看到这个人说有思诺思卖，加了微信之后，对方收了150元，之后这个人一直以外公去世为由不发货，后来直接不回复并且删了我好友，<span style="font-weight: bold;">大家一定警惕</span></span>
-                        <i class="triangle-user"></i>
-                    </div>
-                    <img class="user-img" src="./image/头像3.png" />
-                </div> 
-            </div>
-            
-
-
-
-        </div> -->
+       
     </div>
-
-
-    <!-- Carousel轮播图 -->
-
-    
-    <!-- 非遗网站大图展示例子 尝试ing 把html和css的代码都抄过来了 但也不行-->
-    <!-- <div>
-        <div class="section home8 fp-section active fp-completely" data-anchor="page8" style="height: 800px;">
-    
-            <div class="right">
-                <div class="list-item l0">
-                    <div
-                        edit_params="width%3D320%26height%3D960%26zoom%3D3%26title1Show%3D1%26title1Max%3D10%26title2Show%3D1%26title2Max%3D6%26showLink%3D1">
-                        <div class="cont">
-                            <div class="title-txt">展览</div>
-                            <div class="dot"></div><a href="/zhanlan.html" class="link">查看更多</a>
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-            <div class="list">
-    
-                <div class="list-item l1">
-                    <div
-                        edit_params="width%3D640%26height%3D960%26zoom%3D3%26title1Show%3D1%26title1Max%3D22%26showLink%3D1">
-                        <div class="h30"><a href="/page_special.html" target="_blank">宣纸传统制作技艺</a></div>
-    
-                    </div>
-                </div>
-                <div class="list-item l2 sib">
-                    <div
-                        edit_params="width%3D640%26height%3D960%26zoom%3D3%26title1Show%3D1%26title1Max%3D22%26showLink%3D1">
-                        <div class="h30"><a href="/solar_terms.html" target="_blank">二十四节气</a></div>
-    
-                    </div>
-                </div>
-                <div class="list-item l3 sib">
-                    <div
-                        edit_params="width%3D640%26height%3D960%26zoom%3D3%26title1Show%3D1%26title1Max%3D22%26showLink%3D1">
-                        <div class="h30"><a href="/tjq_home.html" target="_blank">太极拳</a></div>
-    
-                    </div>
-                </div>
-                <div class="list-item l4 sib">
-                    <div class="home8_img_1"
-                        edit_params="width%3D640%26height%3D960%26zoom%3D3%26title1Show%3D1%26title1Max%3D22%26title2Show%3D1%26title2Max%3D6%26showLink%3D1">
-                        <div class="h30">
-                            <div class="title-txt">文化和自然遗产日</div>
-                            <div class="dot"></div>
-                            <a href="/special2022.html" target="_blank" class="link">查看更多</a>
-                        </div>
-                        <div class="title"></div>
-    
-                    </div>
-                </div>
-                <div class="list-item l5 cur">
-                    <div class="home8_img_2"
-                        edit_params="width%3D640%26height%3D960%26zoom%3D3%26title1Show%3D1%26title1Max%3D22%26title2Show%3D1%26title2Max%3D6%26showLink%3D1">
-                        <div class="h30">
-                            <div class="title-txt">影音</div>
-                            <div class="dot"></div>
-                            <a href="/video.html" target="_blank" class="link">查看更多 </a>
-                        </div>
-                        <div class="title"></div>
-    
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </div> -->
-
     
     
     <div class="footer" style="line-height: 30px; width:100%; margin: 0 auto; text-align: center; padding-bottom: 2em;">
